@@ -289,9 +289,31 @@ background: var(--cor-p4);
 padding-top: 59px;
 padding-bottom: 39px;
 }
-.rodape iframe {
-padding-bottom: 36px;
-max-width: 100%;
+.rodape .mapa {
+box-sizing: border-box;
+max-width: 799px;
+margin-left: auto;
+margin-right: auto;
+}
+.rodape img{
+width: 799px;
+height: 349px;
+object-fit: cover;
+}
+.tooltip {
+position: absolute;
+z-index: 500;
+background: rgba(0,0,0,.6);
+box-shadow: 0 0 0 2px #FB5, 0 0 0 6px rgba(0,0,0,.6);
+padding: .5rem;
+color: white;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: bold;
+font-size: .875rem;
+max-width: 170px;
+border-radius: 2px;
+top: 0px;
+left: 0px;
 }
 .rodape .bg {
 display: flex;
@@ -302,6 +324,7 @@ max-width: 1055px;
 height: 80px;
 background: var(--cor-13);
 margin-bottom: 68px;
+margin-top: 40px;
 }
 .rodape .bg-escritorio {
 display: flex;

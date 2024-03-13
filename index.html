@@ -7,8 +7,8 @@
   <title>Imobiliária</title>
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer">
   <link rel="icon" href="./Favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.className += ' js';</script>
 </head>
 
@@ -32,7 +32,7 @@
         <img class=" center" src="img/banner.jpg" alt="Imagem de uma casa">
       </div>
     </section>
-    <section class="introducao-bg" id="sobre" data-menu="suave">
+    <section class="introducao-bg" id="sobre">
       <div class="introducao">
         <div class="container">
           <h1 class="center font-1-xxl cor-13">Encontre o imóvel dos seus sonhos</h1>
@@ -42,8 +42,8 @@
         <p class="center font-1-xs cor-13">Há <span class="cor-p1">10 anos</span> no ramo temos conquistado a confiança de <span class="cor-p1">inúmeros clientes.</span> Isso porque procuramos sempre as melhores condições tanto para quem quer comprar, como para quem quer vender ou alugar. Oferecemos um <span class="cor-p1">serviço de qualidade</span> servindo como ponte entre as partes interessadas.</p>
       </div>
     </section>
-    <section class="servicos-bg" id="servicos" data-menu="suave">
-      <div class="servicos center">
+    <section class="servicos-bg" id="servicos">
+      <div class="servicos center"data-anime="scroll">
         <h1 class="font-1-xxl cor-0">Serviços</h1>
         <p class="font-1-ls cor-0">Contamos com diversos serviços imobiliários e também prestamos suporte em cada uma das etapas necessárias de cada serviço. Aqui na Imobiliária Santos podemos te ajudar com a seguinte gama de assuntos relativos a imóveis:</p>
           <ul class="lista font-1-m cor-0">
@@ -54,7 +54,7 @@
           </ul>
       </div>
     </section>
-    <section class="corretores-bg" id="corretores" data-menu="suave"> 
+    <section class="corretores-bg" id="corretores" data-anime="scroll"> 
       <div class="corretores">
         <div class="container">
           <h1 class="center font-1-xxl cor-p1">Corretores</h1>
@@ -64,11 +64,11 @@
     </section>
   </main>
   <footer class="rodape-bg" id="contato">
-    <div class="rodape center">
+    <div class="rodape center"  data-anime="scroll">
       <h1 class="font-1-xxl cor-0">Contato</h1>
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7764648810125!2d-43.36829162390019!3d-22.995246041039984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda4a80180177%3A0x9d0d7fbaf276e563!2sAv.%20Ayrton%20Senna%2C%20300%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1708714457196!5m2!1spt-BR!2sbr" width="799" height="349" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+            <img class="center" src="img/mapa.jpg" width="799" height="349" alt="Mapa">
+        </div>
       <div class="bg center">
         <p class="font-1-xs cor-0">Se ficou interessado em nos conhecer ou se tiver dúvidas entre em contato conosco através de um dos teefones abaixo:</p>
       </div>
