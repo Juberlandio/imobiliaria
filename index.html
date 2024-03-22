@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imobiliária</title>
-  <meta name="description" content="Desenvolvedor Front End e UX/UI Designer">
+  <meta name="description" content="Imobiliária">
   <link rel="icon" href="./Favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
   <Header class="cabecalho-bg">
     <div class="cabecalho container" data-menu="suave">
       <img class="center" src="img/logo.png" alt="Logo da Imobiliária">
-      <nav>
+      <nav aria-label="primária">
         <ul class="menu center font-1-l cor-13">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
@@ -27,12 +27,12 @@
     </div>
   </Header>
   <main>
-    <section class="banner-bg">
+    <section class="banner-bg" aria-label="Banner">
       <div class="banner">
         <img class=" center" src="img/banner.jpg" alt="Imagem de uma casa">
       </div>
     </section>
-    <section class="introducao-bg" id="sobre">
+    <section class="introducao-bg" aria-label="Introdução" id="sobre">
       <div class="introducao">
         <div class="container">
           <h1 class="center font-1-xxl cor-13">Encontre o imóvel dos seus sonhos</h1>
@@ -42,9 +42,9 @@
         <p class="center font-1-xs cor-13">Há <span class="cor-p1">10 anos</span> no ramo temos conquistado a confiança de <span class="cor-p1">inúmeros clientes.</span> Isso porque procuramos sempre as melhores condições tanto para quem quer comprar, como para quem quer vender ou alugar. Oferecemos um <span class="cor-p1">serviço de qualidade</span> servindo como ponte entre as partes interessadas.</p>
       </div>
     </section>
-    <section class="servicos-bg" id="servicos">
-      <div class="servicos center"data-anime="scroll">
-        <h1 class="font-1-xxl cor-0">Serviços</h1>
+    <section class="servicos-bg" aria-labelledby="servicos" id="servicos">
+      <div class="servicos center" data-anime="scroll">
+        <h1 id="servicos" class="font-1-xxl cor-0">Serviços</h1>
         <p class="font-1-ls cor-0">Contamos com diversos serviços imobiliários e também prestamos suporte em cada uma das etapas necessárias de cada serviço. Aqui na Imobiliária Santos podemos te ajudar com a seguinte gama de assuntos relativos a imóveis:</p>
           <ul class="lista font-1-m cor-0">
             <li>Venda</li>
@@ -54,18 +54,18 @@
           </ul>
       </div>
     </section>
-    <section class="corretores-bg" id="corretores" data-anime="scroll"> 
+    <section class="corretores-bg" aria-labelledby="corretores" id="corretores" data-anime="scroll"> 
       <div class="corretores">
         <div class="container">
-          <h1 class="center font-1-xxl cor-p1">Corretores</h1>
+          <h1 id="corretores" class="center font-1-xxl cor-p1">Corretores</h1>
           <img class="center" src="img/corretores.jpg" alt="">
         </div>
         <p class="center font-1-s cor-13">A <span class="cor-p1"> imobiliária Santos</span>conta com um time de profissionais qualificados que têm vários anos de experiência no mercado. Para entrar em contato com um de nossos corretores, basta clicar no link a seguir: <span class="cor-p1">Corretores</span></p>
     </section>
   </main>
-  <footer class="rodape-bg" id="contato">
+  <footer class="rodape-bg" aria-labelledby="contato" id="contato">
     <div class="rodape center"  data-anime="scroll">
-      <h1 class="font-1-xxl cor-0">Contato</h1>
+      <h1 id="contato" class="font-1-xxl cor-0">Contato</h1>
         <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
             <img class="center" src="img/mapa.jpg" width="799" height="349" alt="Mapa">
         </div>
